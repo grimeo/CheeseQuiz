@@ -17,7 +17,6 @@ var page = 0;
 function changeQuestion(n) {
     var i;
     var qdiv = document.getElementsByClassName('questionaireDiv');
-    
     if((page == 0 && n==-1)||(page==9 && n==+1)){
         n = 0;
         page = page;
@@ -27,7 +26,6 @@ function changeQuestion(n) {
             page==i ? qdiv[i].style.display= 'block' : qdiv[i].style.display='none';  
         }
     }
-    
-    console.log("log");
+    console.log("log" + page);
 }
 changeQuestion(page);
