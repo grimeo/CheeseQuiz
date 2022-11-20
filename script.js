@@ -21,7 +21,7 @@ var qdiv = document.getElementsByClassName('questionaireDiv');
 
 var scoreIterator;
 
-var rightAns = [2,3,0,0,1,3,2,1,0,1]
+var rightAns = [1,3,1,1,0,1,3,1,1,0]
 var currentAns = [0,0,0,0,0,0,0,0,0,0]
 var score = 0;
 
