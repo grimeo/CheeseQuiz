@@ -17,6 +17,9 @@ var btnl = document.getElementById('btnl');
 var btnr = document.getElementById('btnr');
 var submitbtn = document.getElementById('submitbtn');
  
+var rightAns = []
+var currentAns = []
+
 function changeQuestion(n) {
     var i;
     var qdiv = document.getElementsByClassName('questionaireDiv');
@@ -40,3 +43,4 @@ function changeQuestion(n) {
     console.log("log" + page);
 }
 changeQuestion(page);
+

@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins%3A400%2C300%2C700%7COpen+Sans%3A400%2C600%2C700%2C300%7CRoboto%3A400%2C500%2C700%2C300%7CPoppins%3A400%2C600&amp;display=swap&amp;ver=11.5.1');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    background-color: black;
 }
 #main {
     width: 940px;
@@ -20,7 +26,9 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    animation: faded 0.4s;
 }
+    @keyframes faded{from{opacity:0.4} to{opacity:1}}
 
 #btnl, #btnr {
     position: absolute;
@@ -56,83 +64,29 @@
 }
 
 
-.divider_left, .divider_right {
-    display: inline-block;
-    vertical-align: top;
-    height: 600px;
+.details{
+    width: 800px;
+    height:350px;
+    background-color: gray;
+    margin:20px auto;
+    border-radius: 10px;;
+}
+
+.listOfAnswers{
+    width: 800px;
+    height: 180px;
+    background-color: #4e5663;
     border-radius: 10px;
-    background-image: linear-gradient(#293241, #293241);
-    position:relative;
+    margin: auto;
 }
-
-.divider_left{
-    width: 55%;
-}
-.divider_right{
-    width:45%
-}
-    .imgscontainer {
-        width: 480px;
-        height: 470px;
-        position: absolute;
-        top:50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-
-    .imgdiv{
-        width: 225px;
-        height: 225px;
+    .answerbtn {
         display: inline-block;
-        border: 5px solid gray;
-        border-radius: 10px;
-        margin-left:10px;
-        margin-top: 5px;
-    }
-
-    .rightcontainer{
-        width: 400px;
-        height: 400px;
-        position: absolute;
-        top:50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-    h2{
-        text-align: center;
-        color: white;
-        font-size: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .inputletters{
-        width: 370px;
-        height: 75px;
-        margin: auto;
-    }
-        input {
-            width: 70px;
-            height: 70px;
-            display: inline-block;
-            border: none;
-            border-radius: 10px;
-            margin: auto;
-        }
-    .buttons{
-        width: 370px;
-        height: 150px;
-        transform: translate3d(0, 20px, 0);  
-        margin: auto;
-    }
-
-    button {
-        width: 70px;
-        height: 70px;
-        border: none;
-        border-radius: 10px;
+        width: 200px;
+        height:50px;
+        margin: 20px 95px;
         cursor: pointer;
-        font-size: 40px;
+        background-color: #e0fbfc; 
+        border: none;
+        border-radius: 50px;
+        font-size: 25px;
     }
