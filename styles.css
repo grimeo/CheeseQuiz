@@ -23,11 +23,18 @@
     transform: translate(-50%, -50%);
 }
 
-.btnl, .btnr {
+#btnl, #btnr {
+    position: absolute;
     width: 100px;
     height: 70px;
     border: none;
     background-color: lime;
+}
+#btnr {
+    left: 750px;
+}
+#btnl {
+    left: 100px;
 }
 
 div{
