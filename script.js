@@ -63,12 +63,12 @@ function markAnswer(n, classname, qn){
     for(btnToMarkIterator=0;btnToMarkIterator<btnToMark.length;btnToMarkIterator++){
         //n==btnToMarkIterator ? btnToMark[btnToMarkIterator].style.backgroundColor = "blue" : btnToMark[btnToMarkIterator].style.backgroundColor = '#e0fbfc';
         if(n==btnToMarkIterator){
-            btnToMark[btnToMarkIterator].style.backgroundColor = "blue";
-            btnToMark[btnToMarkIterator].style.color = "white";
+            btnToMark[btnToMarkIterator].style.backgroundColor = "white";
+            btnToMark[btnToMarkIterator].style.color = "#284b63";
             console.log("blue")
         } else {
-            btnToMark[btnToMarkIterator].style.backgroundColor = '#e0fbfc'
-            btnToMark[btnToMarkIterator].style.color = "black";
+            btnToMark[btnToMarkIterator].style.backgroundColor = '#284b63'
+            btnToMark[btnToMarkIterator].style.color = "white";
             console.log("green")
         }
     }
