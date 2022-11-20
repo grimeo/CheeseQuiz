@@ -44,3 +44,22 @@ function changeQuestion(n) {
 }
 changeQuestion(page);
 
+
+function markAnswer(n, classname){
+    let btnToMark = document.getElementsByClassName(classname);
+    let btnToMarkIterator;
+
+    for(btnToMarkIterator=0;btnToMarkIterator<btnToMark.length;btnToMarkIterator++){
+        //n==btnToMarkIterator ? btnToMark[btnToMarkIterator].style.backgroundColor = "blue" : btnToMark[btnToMarkIterator].style.backgroundColor = '#e0fbfc';
+        if(n==btnToMarkIterator){
+            btnToMark[btnToMarkIterator].style.backgroundColor = "blue";
+            console.log("blue")
+        } else {
+            btnToMark[btnToMarkIterator].style.backgroundColor = '#e0fbfc'
+            console.log("green")
+        }
+
+    }
+    
+
+}
