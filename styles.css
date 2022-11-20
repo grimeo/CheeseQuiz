@@ -13,8 +13,8 @@
 .questionaireDiv{
     display: none;
     width: 80%;
-    height: 70vh;
-    background-color: red;
+    height: 60vh;
+    background-color: rgb(126, 221, 154);
     border-radius: 50px;
     position: absolute;
     top:50%;
@@ -28,16 +28,36 @@
     width: 100px;
     height: 70px;
     border: none;
-    background-color: lime;
+    background-color: limegreen;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 10px;
 }
 #btnr {
     left: 750px;
+    top: 85vh
 }
 #btnl {
     left: 100px;
+    top: 85vh;
 }
 
+#submitbtn{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    border: none;
+    background-color: limegreen;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 10px;
+    left: 400px;
+    top: 85vh
+}
+
+
 div{
-    font-size: 40px;
     text-align: center;
+    font-size: 40px;
 }
