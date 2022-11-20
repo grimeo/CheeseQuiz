@@ -17,12 +17,19 @@ var btnl = document.getElementById('btnl');
 var btnr = document.getElementById('btnr');
 var submitbtn = document.getElementById('submitbtn');
  
-var rightAns = [0,0,0,0,0,0,0,0,0,0]
+var qdiv = document.getElementsByClassName('questionaireDiv');
+
+var scoreIterator;
+
+var rightAns = [2,3,0,0,1,3,2,1,0,1]
 var currentAns = [0,0,0,0,0,0,0,0,0,0]
+var score = 0;
+
+var scoreToDisplay = document.getElementById('score');
+var scoreContainer = document.getElementById('scoreContainer')
 
 function changeQuestion(n) {
     let i;
-    let qdiv = document.getElementsByClassName('questionaireDiv');
     if((page == 0 && n==-1)||(page==9 && n==+1)){
         n = 0;
     } else {
@@ -45,9 +52,13 @@ function changeQuestion(n) {
 changeQuestion(page);
 
 
-function markAnswer(n, classname){
+function markAnswer(n, classname, qn){
+    
     let btnToMark = document.getElementsByClassName(classname);
     let btnToMarkIterator;
+
+    currentAns[qn] = n;
+    console.log(currentAns)
 
     for(btnToMarkIterator=0;btnToMarkIterator<btnToMark.length;btnToMarkIterator++){
         //n==btnToMarkIterator ? btnToMark[btnToMarkIterator].style.backgroundColor = "blue" : btnToMark[btnToMarkIterator].style.backgroundColor = '#e0fbfc';
@@ -59,6 +70,17 @@ function markAnswer(n, classname){
             btnToMark[btnToMarkIterator].style.backgroundColor = '#e0fbfc'
             btnToMark[btnToMarkIterator].style.color = "black";
             console.log("green")
+        }
+    }
+}
+
+function checkScore(){
+    for(scoreIterator=0; scoreIterator<currentAns.length;scoreIterator++){
+        if(currentAns[scoreIterator]==rightAns[scoreIterator]){
+            score = score + 1;
+            qdiv[9].style.display = 'none';
+            scoreContainer.style.display = 'block';
+            scoreToDisplay.innerHTML = score;
         }
     }
 }
