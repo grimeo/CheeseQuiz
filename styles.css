@@ -30,8 +30,10 @@ body {
 }
 #scoreContainer{
     display: none;
-    width: 200px;
-    height: 200px;
+    width: 450px;
+    height: 270px;
+    text-align: center;
+    color: white;
     background-color: #293241;
     font-size: 40px;
     border-radius: 15px;
