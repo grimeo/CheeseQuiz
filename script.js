@@ -1,17 +1,3 @@
-// var mainContainer = document.getElementById('main');
-// var qDivcounter;
-
-// // var leftBtn = document.getElementsById();
-// // var rightBtn = document.getElementsById();
-
-// for(qDivcounter=1;qDivcounter<=10;qDivcounter++){
-//     var questionsdiv = document.createElement('div');
-//     questionsdiv.setAttribute("class","questionaireDiv");
-//     questionsdiv.setAttribute("id","q".concat(qDivcounter));
-//     questionsdiv.onclick = function () {changeQuestion(qDivcounter)};
-//     questionsdiv.innerHTML = "question" + qDivcounter;
-//     mainContainer.appendChild(questionsdiv);
-// }
 var page = 0;
 var btnl = document.getElementById('btnl');
 var btnr = document.getElementById('btnr');
@@ -83,4 +69,8 @@ function checkScore(){
             scoreToDisplay.innerHTML = score;
         }
     }
+}
+
+function restart(){
+    location.reload();
 }
