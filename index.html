@@ -10,8 +10,35 @@
 <body>
     
     <div id="main">
-        <h1>QUIZ GAME</h1>
-        <div class="questionaireDiv" id="q1">question1</div>
+        <div class="questionaireDiv" id="q1">
+            <div class="divider_left">
+                <div class="imgscontainer">
+                    <div class="imgdiv"></div>
+                    <div class="imgdiv"></div>
+                    <div class="imgdiv"></div>
+                    <div class="imgdiv"></div>
+                </div>
+            </div><!--
+        --><div class="divider_right">
+                <div class="rightcontainer">
+                    <h2>Solve the puzzle</h2>
+                    <div class="inputletters">
+                        <input type="text" disabled>
+                        <input type="text" disabled>
+                        <input type="text" disabled>
+                        <input type="text" disabled>
+                        <input type="text" disabled>
+                    </div>
+                    <div class="buttons">
+                        <button>E</button>
+                        <button>T</button>
+                        <button>N</button>
+                        <button>T</button>
+                        <button>I</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="questionaireDiv" id="q2">question2</div>
         <div class="questionaireDiv" id="q3">question3</div>
         <div class="questionaireDiv" id="q4">question4</div>
@@ -23,6 +50,7 @@
         <div class="questionaireDiv" id="q10">question10</div>
         <div class="scoreContainer"></div>
 
+        
         <button id="btnl" onclick="changeQuestion(-1)">prev</button>
         <button id="btnr" onclick="changeQuestion(+1)">next</button>
 

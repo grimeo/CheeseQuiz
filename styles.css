@@ -6,16 +6,15 @@
 #main {
     width: 940px;
     height:100vh;
-    border: 1px solid black;
     margin: auto;
     position: relative;
 }
 .questionaireDiv{
     display: none;
-    width: 80%;
-    height: 60vh;
-    background-color: rgb(126, 221, 154);
-    border-radius: 50px;
+    width: 100%;
+    height: 600px;
+    background-color: #293241;
+    border-radius: 15px;
     position: absolute;
     top:50%;
     left: 50%;
@@ -34,11 +33,11 @@
     border-radius: 10px;
 }
 #btnr {
-    left: 750px;
+    left: 850px;
     top: 85vh
 }
 #btnl {
-    left: 100px;
+    left: -20px;
     top: 85vh;
 }
 
@@ -53,11 +52,87 @@
     font-size: 30px;
     border-radius: 10px;
     left: 400px;
-    top: 85vh
+    top: 85vh;
 }
 
 
-div{
-    text-align: center;
-    font-size: 40px;
+.divider_left, .divider_right {
+    display: inline-block;
+    vertical-align: top;
+    height: 600px;
+    border-radius: 10px;
+    background-image: linear-gradient(#293241, #293241);
+    position:relative;
 }
+
+.divider_left{
+    width: 55%;
+}
+.divider_right{
+    width:45%
+}
+    .imgscontainer {
+        width: 480px;
+        height: 470px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .imgdiv{
+        width: 225px;
+        height: 225px;
+        display: inline-block;
+        border: 5px solid gray;
+        border-radius: 10px;
+        margin-left:10px;
+        margin-top: 5px;
+    }
+
+    .rightcontainer{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    h2{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .inputletters{
+        width: 370px;
+        height: 75px;
+        margin: auto;
+    }
+        input {
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            border: none;
+            border-radius: 10px;
+            margin: auto;
+        }
+    .buttons{
+        width: 370px;
+        height: 150px;
+        transform: translate3d(0, 20px, 0);  
+        margin: auto;
+    }
+
+    button {
+        width: 70px;
+        height: 70px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 40px;
+    }
