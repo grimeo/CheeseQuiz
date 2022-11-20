@@ -17,8 +17,8 @@ var btnl = document.getElementById('btnl');
 var btnr = document.getElementById('btnr');
 var submitbtn = document.getElementById('submitbtn');
  
-var rightAns = []
-var currentAns = []
+var rightAns = [0,0,0,0,0,0,0,0,0,0]
+var currentAns = [0,0,0,0,0,0,0,0,0,0]
 
 function changeQuestion(n) {
     var i;
@@ -53,13 +53,14 @@ function markAnswer(n, classname){
         //n==btnToMarkIterator ? btnToMark[btnToMarkIterator].style.backgroundColor = "blue" : btnToMark[btnToMarkIterator].style.backgroundColor = '#e0fbfc';
         if(n==btnToMarkIterator){
             btnToMark[btnToMarkIterator].style.backgroundColor = "blue";
+            btnToMark[btnToMarkIterator].style.color = "white";
             console.log("blue")
         } else {
             btnToMark[btnToMarkIterator].style.backgroundColor = '#e0fbfc'
+            btnToMark[btnToMarkIterator].style.color = "black";
             console.log("green")
         }
 
     }
-    
 
 }

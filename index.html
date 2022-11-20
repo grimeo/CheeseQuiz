@@ -20,17 +20,21 @@
                 <button class="answerbtn q1ans" onclick="markAnswer(2, 'q1ans')">A. asdasdsad</button>
                 <button class="answerbtn q1ans" onclick="markAnswer(3, 'q1ans')">A. asdasdsad</button>
             </div>
+            <button id="btnl" onclick="changeQuestion(-1)">prev</button>
+            <button id="btnr" onclick="changeQuestion(+1)">next</button>
         </div>
         <div class="questionaireDiv" id="q2">
             <div class="details">
                 <h2>This selector is a way to select only the element with the specified id, and apply styles to that element.</h2> 
             </div>
             <div class="listOfAnswers">
-                <button class="answerbtn" onclick="">A. asdasdsad</button>
-                <button class="answerbtn">A. asdasdsad</button>
-                <button class="answerbtn">A. asdasdsad</button>
-                <button class="answerbtn">A. asdasdsad</button>
+                <button class="answerbtn q2ans" onclick="markAnswer(0, 'q2ans')"> A. asdasdsad</button>
+                <button class="answerbtn q2ans" onclick="markAnswer(1, 'q2ans')">A. asdasdsad</button>
+                <button class="answerbtn q2ans" onclick="markAnswer(2, 'q2ans')">A. asdasdsad</button>
+                <button class="answerbtn q2ans" onclick="markAnswer(3, 'q2ans')">A. asdasdsad</button>
             </div>
+            <button id="btnl" onclick="changeQuestion(-1)">prev</button>
+            <button id="btnr" onclick="changeQuestion(+1)">next</button>
         </div>
         <div class="questionaireDiv" id="q3">question3</div>
         <div class="questionaireDiv" id="q4">question4</div>
@@ -42,8 +46,7 @@
         <div class="questionaireDiv" id="q10">question10</div>
         <div class="scoreContainer"></div>
         
-        <button id="btnl" onclick="changeQuestion(-1)">prev</button>
-        <button id="btnr" onclick="changeQuestion(+1)">next</button>
+        
 
         <button id="submitbtn">Submit</button>
     </div>

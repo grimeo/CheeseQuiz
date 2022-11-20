@@ -39,14 +39,13 @@ body {
     cursor: pointer;
     font-size: 30px;
     border-radius: 10px;
+    z-index: 10000;
 }
 #btnr {
-    left: 770px;
-    top: 555px
+    transform: translate3d(770px, 10px,0);
 }
 #btnl {
-    left: 70px;
-    top: 555px;
+    transform: translate3d(70px, 10px,0);
 }
 
 #submitbtn{
