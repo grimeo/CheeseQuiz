@@ -21,8 +21,8 @@ var rightAns = [0,0,0,0,0,0,0,0,0,0]
 var currentAns = [0,0,0,0,0,0,0,0,0,0]
 
 function changeQuestion(n) {
-    var i;
-    var qdiv = document.getElementsByClassName('questionaireDiv');
+    let i;
+    let qdiv = document.getElementsByClassName('questionaireDiv');
     if((page == 0 && n==-1)||(page==9 && n==+1)){
         n = 0;
     } else {
@@ -60,7 +60,5 @@ function markAnswer(n, classname){
             btnToMark[btnToMarkIterator].style.color = "black";
             console.log("green")
         }
-
     }
-
 }

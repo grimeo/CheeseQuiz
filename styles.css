@@ -39,7 +39,6 @@ body {
     cursor: pointer;
     font-size: 30px;
     border-radius: 10px;
-    z-index: 10000;
 }
 #btnr {
     transform: translate3d(770px, 10px,0);
@@ -58,8 +57,7 @@ body {
     cursor: pointer;
     font-size: 30px;
     border-radius: 10px;
-    left: 400px;
-    top: 80vh;
+    transform: translate3d(400px, 10px,0);
 }
 
 .details{
