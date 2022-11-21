@@ -16,21 +16,41 @@ var scoreContainer = document.getElementById('scoreContainer')
 
 function changeQuestion(n) {
     let i;
+    // if(page == 0 && n==-1){
+    //     n=0;
+    //     btnl.style.display = 'none';
+    // } else if (page==9 && n==+1){
+    //     n=0;
+    //     btnr.style.display = 'none';
+    //     submitbtn.style.display = 'block';
+    // } else {
+    //     page = page + n; 
+    //     for (i=0;i<qdiv.length;i++){
+    //         page==i ? qdiv[i].style.display= 'block' : qdiv[i].style.display='none';
+    //     }
+    //     if (page==9){
+    //         btnr.style.display = 'none';
+    //         btnr.style.visibility = 'hidden';
+    //         submitbtn.style.display = 'block';
+    //     } 
+    //}
+
     if((page == 0 && n==-1)||(page==9 && n==+1)){
         n = 0;
     } else {
         page = page + n; 
         page==0 ? btnl.style.display = 'none' : btnl.style.display = 'block';
-        //page==9 ? btnr.style.display = 'none' : btnr.style.display = 'block';
+        //page==9 && n==+1 ? btnr.style.display = 'none' : btnr.style.display = 'block';
+        console.log(page)
         if(page==9){
-            btnr.style.display = 'none'
+            let newbtnrclass = document.getElementsByClassName('lastbtnr');
+            newbtnrclass[0].style.display = 'none';
             submitbtn.style.display = 'block';
         } else {
-            btnr.style.display = 'block'
             submitbtn.style.display = 'none';
         }
         for (i=0;i<qdiv.length;i++){
-            page==i ? qdiv[i].style.display= 'block' : qdiv[i].style.display='none';  
+            page==i ? qdiv[i].style.display= 'block' : qdiv[i].style.display='none';
         }
     }
     console.log("log" + page);

@@ -77,10 +77,12 @@ h2{
     border-radius: 10px;
 }
 #btnr {
-    transform: translate3d(770px, 10px,0);
+    margin-top: 10px;
+    margin-left: 770px;
 }
 #btnl {
-    transform: translate3d(70px, 10px,0);
+    margin-left: 70px;
+    margin-top: 10px;
 }
 
 #submitbtn{
